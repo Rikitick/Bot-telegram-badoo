@@ -3,7 +3,7 @@ import os
 from db import *
 
 
-bot = telebot.TeleBot('5559031502:AAEYQdWZ3YedTOEn-sHy-5OUjRTgAcHryEE', parse_mode=None)
+bot = telebot.TeleBot('Your Token', parse_mode=None)
 db = DateBaseUsers('users.db')
 
 list_users = None
@@ -463,3 +463,4 @@ def subscribe(message):
         bot.send_message(message.chat.id, 'Очень жаль, а ведь вы могли помочь нашему каналу')
 
 bot.infinity_polling()
+
